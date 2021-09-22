@@ -1,0 +1,120 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "HolaWeb.App.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/HolaWeb.App.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HolaWeb.App.Dominio.dll": {}
+        }
+      },
+      "HolaWeb.App.Persistencia/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "HolaWeb.App.Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HolaWeb.App.Persistencia.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HolaWeb.App.Persistencia.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HolaWeb.App.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../HolaWeb.App.Dominio/HolaWeb.App.Dominio.csproj",
+      "msbuildProject": "../HolaWeb.App.Dominio/HolaWeb.App.Dominio.csproj"
+    },
+    "HolaWeb.App.Persistencia/1.0.0": {
+      "type": "project",
+      "path": "../HolaWeb.App.Persistencia/HolaWeb.App.Persistencia.csproj",
+      "msbuildProject": "../HolaWeb.App.Persistencia/HolaWeb.App.Persistencia.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "HolaWeb.App.Dominio >= 1.0.0",
+      "HolaWeb.App.Persistencia >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\samur\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\HolaWeb23\\MisionTIC-2021-Ciclo3-WF-main\\MisionTIC-2021-Ciclo3-WF-main\\HolaWeb.App.Frontend\\HolaWeb.App.Frontend.csproj",
+      "projectName": "HolaWeb.App.Frontend",
+      "projectPath": "C:\\HolaWeb23\\MisionTIC-2021-Ciclo3-WF-main\\MisionTIC-2021-Ciclo3-WF-main\\HolaWeb.App.Frontend\\HolaWeb.App.Frontend.csproj",
+      "packagesPath": "C:\\Users\\samur\\.nuget\\packages\\",
+      "outputPath": "C:\\HolaWeb23\\MisionTIC-2021-Ciclo3-WF-main\\MisionTIC-2021-Ciclo3-WF-main\\HolaWeb.App.Frontend\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\samur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\HolaWeb23\\MisionTIC-2021-Ciclo3-WF-main\\MisionTIC-2021-Ciclo3-WF-main\\HolaWeb.App.Dominio\\HolaWeb.App.Dominio.csproj": {
+              "projectPath": "C:\\HolaWeb23\\MisionTIC-2021-Ciclo3-WF-main\\MisionTIC-2021-Ciclo3-WF-main\\HolaWeb.App.Dominio\\HolaWeb.App.Dominio.csproj"
+            },
+            "C:\\HolaWeb23\\MisionTIC-2021-Ciclo3-WF-main\\MisionTIC-2021-Ciclo3-WF-main\\HolaWeb.App.Persistencia\\HolaWeb.App.Persistencia.csproj": {
+              "projectPath": "C:\\HolaWeb23\\MisionTIC-2021-Ciclo3-WF-main\\MisionTIC-2021-Ciclo3-WF-main\\HolaWeb.App.Persistencia\\HolaWeb.App.Persistencia.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "IyXgL4+LSiqT6BglrmNmdCv7/OxqZUNMwAMin/jgzg6XxPbCUSh2Fy16SxvUF1XVQ6Q+Rdj4rXJUN7Jtbh4p3w==",
+  "success": true,
+  "projectFilePath": "C:\\HolaWeb23\\MisionTIC-2021-Ciclo3-WF-main\\MisionTIC-2021-Ciclo3-WF-main\\HolaWeb.App.Persistencia\\HolaWeb.App.Persistencia.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\samur\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\samur\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
