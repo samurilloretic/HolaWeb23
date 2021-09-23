@@ -3,7 +3,7 @@
 @{
 }
 <h1>Listado de Saludos en Varios Idiomas</h1>
-
+@*
 <form method="get">
     <div class="form-group">
     <p>
@@ -19,6 +19,25 @@
             <td>@saludo.EnEspañol</td>
             <td>@saludo.EnIngles</td>
             <td>@saludo.EnItaliano</td>
+        </tr>
+    }
+</table>
+*@
+
+<form method="get">
+    <div class="form-group">
+    <p>
+    Saludo:<input type="text" name="filtroHora" asp-for="FiltroHora"/>
+        <input type="submit" value="Filtrar" />
+    </p>
+</form>
+
+<table class="table">
+    {
+        <tr>
+            <td>@Model.Saludo.EnEspañol</td>
+            <td>@Model.Saludo.EnIngles</td>
+            <td>@Model.Saludo.EnItaliano</td>
         </tr>
     }
 </table>

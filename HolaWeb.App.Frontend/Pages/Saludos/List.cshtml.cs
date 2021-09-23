@@ -16,18 +16,26 @@ namespace HolaWeb.App.Frontend.Pages
         private readonly IRepositorioSaludos repositorioSaludos;
         public IEnumerable<Saludo> Saludos {get;set;}
         public string FiltroBusqueda{get;set;}
+        public int FiltroHora{get;set;}
+        public Saludo Saludo;
         public ListModel(IRepositorioSaludos repositorioSaludos)
         {
                 this.repositorioSaludos=repositorioSaludos;
         }
        
-        public void OnGet(string filtroBusqueda)
+        /*public void OnGet(string filtroBusqueda)
         {
             //ListaSaludos = new List<string>();
             //ListaSaludos.AddRange(saludos);
             //Saludos=repositorioSaludos.GetAll();
             FiltroBusqueda=filtroBusqueda;
             Saludos=repositorioSaludos.GetSaludosPorFiltro(FiltroBusqueda);
+        }*/
+
+        public void OnGet(int filtroHora)
+        {
+            FiltroHora=filtroHora;
+            Saludo=repositorioSaludos.GetSaludoPorHora(FiltroHora);
         }
     }
 }

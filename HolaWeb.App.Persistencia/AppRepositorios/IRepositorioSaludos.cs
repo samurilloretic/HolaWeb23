@@ -9,5 +9,8 @@ namespace HolaWeb.App.Persistencia.AppRepositorios
 
         IEnumerable<Saludo> GetSaludosPorFiltro(string filtro);
          
+        Saludo GetSaludoPorHora(int filtro); 
+
+        Saludo GetSaludoPorId(int id);
     }
 }

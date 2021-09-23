@@ -8,14 +8,15 @@ namespace HolaWeb.App.Persistencia.AppRepositorios
     public class RepositorioSaludosMemoria : IRepositorioSaludos
     {
         List<Saludo> saludos;
-
+        Saludo saludo;
         public RepositorioSaludosMemoria()
         {
             saludos= new List<Saludo>()
             {
                 new Saludo{Id=1,EnEspañol="Buenos Dias",EnIngles="Good Morning",EnItaliano="Bungiorno"},
                 new Saludo{Id=2,EnEspañol="Buenas Tardes",EnIngles="Good Afternoon",EnItaliano="Buon pomeriggio"},
-                new Saludo{Id=3,EnEspañol="Buenas Noches",EnIngles="Good Evening",EnItaliano="Buona notte"}
+                new Saludo{Id=3,EnEspañol="Buenas Noches",EnIngles="Good Evening",EnItaliano="Buona notte"},
+                new Saludo{Id=4,EnEspañol="Hora inválida",EnIngles="invalid hour",EnItaliano="Tempo no valido"}
             };
         }
         public IEnumerable<Saludo> GetAll()
@@ -35,5 +36,31 @@ namespace HolaWeb.App.Persistencia.AppRepositorios
             }
             return saludos;
         }
+
+
+        public Saludo GetSaludoPorId(int Id){
+            return saludos.SingleOrDefault(s=>s.Id==Id);
+        }
+
+
+        public Saludo GetSaludoPorHora(int filtro)
+        {
+            if (filtro<12)
+            {
+                saludo = GetSaludoPorId(1);
+            }else if(filtro <18)
+            {
+                saludo = GetSaludoPorId(2);
+            }else if(filtro < 24)
+            {
+                saludo = GetSaludoPorId(3);
+            }else if (filtro>=24 | filtro<0)
+            {
+                saludo = GetSaludoPorId(4);
+            }
+            return saludo;
+        }
+
+
     }
 }
