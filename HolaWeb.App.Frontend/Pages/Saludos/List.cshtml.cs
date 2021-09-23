@@ -25,14 +25,15 @@ namespace HolaWeb.App.Frontend.Pages
                 this.repositorioSaludos=repositorioSaludos;
         }
        
-        /*public void OnGet(string filtroBusqueda)
+        //public void OnGet(string filtroBusqueda)
+        public void OnGet()
         {
             //ListaSaludos = new List<string>();
             //ListaSaludos.AddRange(saludos);
-            //Saludos=repositorioSaludos.GetAll();
-            FiltroBusqueda=filtroBusqueda;
-            Saludos=repositorioSaludos.GetSaludosPorFiltro(FiltroBusqueda);
-        }*/
+            Saludos=repositorioSaludos.GetAll();
+            //FiltroBusqueda=filtroBusqueda;
+            //Saludos=repositorioSaludos.GetSaludosPorFiltro(FiltroBusqueda);
+        }
 
         /*public void OnGet(int filtroHora)
         {
@@ -41,10 +42,10 @@ namespace HolaWeb.App.Frontend.Pages
         }*/
 
 
-        public void OnGet(DateTime filtroHora)
+        /*public void OnGet(DateTime filtroHora)
         {
             FiltroHora=filtroHora;
             Saludo=repositorioSaludos.GetSaludoPorHora(FiltroHora);
-        }
+        }*/
     }
 }

@@ -23,7 +23,7 @@
     }
 </table>
 *@
-
+@*
 <form method="get">
     <div class="form-group">
     <p>
@@ -31,13 +31,22 @@
         <input type="submit" value="Filtrar" />
     </p>
 </form>
+*@
+
 
 <table class="table">
+    @foreach (var saludo in Model.Saludos)
     {
         <tr>
-            <td>@Model.Saludo.EnEspañol</td>
-            <td>@Model.Saludo.EnIngles</td>
-            <td>@Model.Saludo.EnItaliano</td>
+            <td>@saludo.EnEspañol</td>
+            <td>@saludo.EnIngles</td>
+            <td>@saludo.EnItaliano</td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="/Saludos/Details" asp-route-saludoId="@saludo.Id">Detalles saludos
+                <i class="fas fa-info-circle"></i>
+                Detalle Saludo
+                </a>
+            </td>
         </tr>
     }
 </table>
