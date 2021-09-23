@@ -61,6 +61,24 @@ namespace HolaWeb.App.Persistencia.AppRepositorios
             return saludo;
         }
 
+        public Saludo GetSaludoPorHora(DateTime filtro)
+        {
+            if (filtro<Convert.ToDateTime("12:00:00"))
+            {
+                saludo = GetSaludoPorId(1);
+            }else if(filtro <Convert.ToDateTime("18:00:00"))
+            {
+                saludo = GetSaludoPorId(2);
+            }else if(filtro < Convert.ToDateTime("23:59:00"))
+            {
+                saludo = GetSaludoPorId(3);
+            }else if (filtro>=Convert.ToDateTime("23:59:00") | filtro<Convert.ToDateTime("00:00:00"))
+            {
+                saludo = GetSaludoPorId(4);
+            }
+            return saludo;
+        }
+
 
     }
 }

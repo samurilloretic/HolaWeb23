@@ -7,6 +7,7 @@ using HolaWeb.App.Persistencia.AppRepositorios;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
+
 namespace HolaWeb.App.Frontend.Pages
 {
     public class ListModel : PageModel
@@ -16,7 +17,8 @@ namespace HolaWeb.App.Frontend.Pages
         private readonly IRepositorioSaludos repositorioSaludos;
         public IEnumerable<Saludo> Saludos {get;set;}
         public string FiltroBusqueda{get;set;}
-        public int FiltroHora{get;set;}
+        //public int FiltroHora{get;set;}
+        public DateTime FiltroHora{get;set;}
         public Saludo Saludo;
         public ListModel(IRepositorioSaludos repositorioSaludos)
         {
@@ -32,7 +34,14 @@ namespace HolaWeb.App.Frontend.Pages
             Saludos=repositorioSaludos.GetSaludosPorFiltro(FiltroBusqueda);
         }*/
 
-        public void OnGet(int filtroHora)
+        /*public void OnGet(int filtroHora)
+        {
+            FiltroHora=filtroHora;
+            Saludo=repositorioSaludos.GetSaludoPorHora(FiltroHora);
+        }*/
+
+
+        public void OnGet(DateTime filtroHora)
         {
             FiltroHora=filtroHora;
             Saludo=repositorioSaludos.GetSaludoPorHora(FiltroHora);
