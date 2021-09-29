@@ -1,0 +1,18 @@
+﻿@page
+@model HolaWeb.App.Frontend.Pages.DeleteModel
+@{
+}
+<h1>El registro que se va a eliminar es: </h1>
+
+<h1> @Model.Saludo.EnEspañol</h1>
+<h1> @Model.Saludo.EnItaliano</h1>
+<h1> @Model.Saludo.EnIngles</h1>
+<h1> @Model.Saludo.Id</h1>
+<form method="post">
+    <input type="hidden" asp-for="Saludo.Id">
+    <input type="hidden" asp-for="Saludo.EnEspañol">
+    <input type="hidden" asp-for="Saludo.EnIngles">
+    <input type="hidden" asp-for="Saludo.EnItaliano">
+    <button type="submit" class="btn btn-primary">Eliminar</button>
+</form>
+<a class="nav-link text-dark" asp-area="" asp-page="/Saludos/List">Lista de saludos</a>
