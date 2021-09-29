@@ -91,5 +91,11 @@ namespace HolaWeb.App.Persistencia.AppRepositorios
             return saludo;
         }
 
+        public Saludo Add(Saludo nuevoSaludo)
+        {
+            nuevoSaludo.Id = saludos.Max(r => r.Id) + 1;
+            saludos.Add(nuevoSaludo);
+            return nuevoSaludo;
+        }
     }
 }
