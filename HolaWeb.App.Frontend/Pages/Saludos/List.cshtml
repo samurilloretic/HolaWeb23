@@ -43,8 +43,12 @@
             <td>@saludo.EnItaliano</td>
             <td>
                 <a class="btn btn-primary table-btn" asp-page="/Saludos/Details" asp-route-saludoId="@saludo.Id">
-                <i class="fas fa-info-circle"></i>
-                Detalle Saludo
+                <i class="far fa-envelope"></i>              
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="/Saludos/edit" asp-route-saludoId="@saludo.Id">
+                <i class="fas fa-address-book fa-lg" aria-hidden="true"></i>
                 </a>
             </td>
         </tr>

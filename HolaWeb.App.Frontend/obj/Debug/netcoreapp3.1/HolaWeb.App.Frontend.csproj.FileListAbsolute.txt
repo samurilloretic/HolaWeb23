@@ -81,3 +81,4 @@ C:\HolaWeb23\MisionTIC-2021-Ciclo3-WF-main\MisionTIC-2021-Ciclo3-WF-main\HolaWeb
 C:\HolaWeb23\MisionTIC-2021-Ciclo3-WF-main\MisionTIC-2021-Ciclo3-WF-main\HolaWeb.App.Frontend\obj\Debug\netcoreapp3.1\HolaWeb.App.Frontend.pdb
 C:\HolaWeb23\MisionTIC-2021-Ciclo3-WF-main\MisionTIC-2021-Ciclo3-WF-main\HolaWeb.App.Frontend\obj\Debug\netcoreapp3.1\HolaWeb.App.Frontend.genruntimeconfig.cache
 C:\HolaWeb23\MisionTIC-2021-Ciclo3-WF-main\MisionTIC-2021-Ciclo3-WF-main\HolaWeb.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Saludos\Details.cshtml.g.cs
+C:\HolaWeb23\MisionTIC-2021-Ciclo3-WF-main\MisionTIC-2021-Ciclo3-WF-main\HolaWeb.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Saludos\edit.cshtml.g.cs

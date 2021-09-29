@@ -79,6 +79,17 @@ namespace HolaWeb.App.Persistencia.AppRepositorios
             return saludo;
         }
 
+        public Saludo Update(Saludo saludoActualizado)
+        {
+            var saludo = saludos.SingleOrDefault(r=>r.Id==saludoActualizado.Id);
+            if (saludo!=null)
+            {
+                saludo.EnEspañol = saludoActualizado.EnEspañol;
+                saludo.EnIngles = saludoActualizado.EnIngles;
+                saludo.EnItaliano = saludoActualizado.EnItaliano;
+            }
+            return saludo;
+        }
 
     }
 }

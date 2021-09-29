@@ -15,5 +15,7 @@ namespace HolaWeb.App.Persistencia.AppRepositorios
         Saludo GetSaludoPorHora(DateTime filtro); 
 
         Saludo GetSaludoPorId(int id);
+
+        Saludo Update(Saludo saludoActualizado);
     }
 }
