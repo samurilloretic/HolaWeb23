@@ -28,7 +28,7 @@ namespace HolaWeb.App.Frontend.Pages
 
         public IActionResult OnPost()
         {
-            Console.WriteLine(Saludo.EnItaliano);
+            //Console.WriteLine(Saludo.EnItaliano);
             repositorioSaludos.Delete(Saludo);
             return RedirectToPage("./List");
         }

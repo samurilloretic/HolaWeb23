@@ -93,13 +93,13 @@ namespace HolaWeb.App.Persistencia.AppRepositorios
 
         public Saludo Add(Saludo nuevoSaludo)
         {
-            /*
-            Console.WriteLine(saludos.Max(r => r.Id));
-            if (saludos.Max(r => r.Id) == null)
+            //Console.WriteLine(saludos.Count);
+            if (saludos.Count==0)
+            {
                 nuevoSaludo.Id = 1;
-            else
-                nuevoSaludo.Id = saludos.Max(r => r.Id) + 1;*/
-            nuevoSaludo.Id = saludos.Max(r => r.Id) + 1;
+            }else{
+                nuevoSaludo.Id = saludos.Max(r => r.Id) + 1;
+            }
             saludos.Add(nuevoSaludo);
             return nuevoSaludo;
         }

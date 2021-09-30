@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Oxvwu9JIvShv/4i8TQWOy4W/S1e00EEkaC3DlrX3WQC7EBDJVOxXPtMQIBqrFQGDU0gSsPvRXWi8mM/hH7fKbw==",
+  "dgSpecHash": "cftGHLX7A34y+guyMziCz/DqT/NbUS0f1JdaizLgu/3WaBFQ3YAC35PTy35DJjrG3X1JXSBfYt+fn33MBLbxLQ==",
   "success": true,
   "projectFilePath": "C:\\HolaWeb23\\MisionTIC-2021-Ciclo3-WF-main\\MisionTIC-2021-Ciclo3-WF-main\\HolaWeb.App.Frontend\\HolaWeb.App.Frontend.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\samur\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
